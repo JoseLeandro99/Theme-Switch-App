@@ -2,8 +2,14 @@
 
 A simple theme switcher app made with UIKit and ViewCode
 
-<img src="images/light_mode.png" alt="light mode" width="300" />
-<img src="images/dark_mode.png" alt="dark mode" width="300" />
+<table>
+  <tbody>
+    <tr>
+      <td><img src="images/light_mode.png" alt="light mode" width="350" /></td>
+      <td><img src="images/dark_mode.png" alt="dark mode" width="350" /></td>
+    </tr>
+  </tbody>
+</table>
 
 ### Made with ###
 
