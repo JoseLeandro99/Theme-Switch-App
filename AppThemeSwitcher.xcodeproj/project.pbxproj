@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		9C4F9CDB28949E0A00FAD8AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F9CDA28949E0A00FAD8AC /* AppDelegate.swift */; };
 		9C4F9CDD28949E0A00FAD8AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F9CDC28949E0A00FAD8AC /* SceneDelegate.swift */; };
-		9C4F9CDF28949E0A00FAD8AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F9CDE28949E0A00FAD8AC /* ViewController.swift */; };
-		9C4F9CE228949E0A00FAD8AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4F9CE028949E0A00FAD8AC /* Main.storyboard */; };
 		9C4F9CE428949E0C00FAD8AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C4F9CE328949E0C00FAD8AC /* Assets.xcassets */; };
 		9C4F9CE728949E0C00FAD8AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4F9CE528949E0C00FAD8AC /* LaunchScreen.storyboard */; };
 		9C4F9CF228949E0C00FAD8AC /* AppThemeSwitcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F9CF128949E0C00FAD8AC /* AppThemeSwitcherTests.swift */; };
 		9C4F9CFC28949E0C00FAD8AC /* AppThemeSwitcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F9CFB28949E0C00FAD8AC /* AppThemeSwitcherUITests.swift */; };
 		9C4F9CFE28949E0C00FAD8AC /* AppThemeSwitcherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F9CFD28949E0C00FAD8AC /* AppThemeSwitcherUITestsLaunchTests.swift */; };
+		9C4F9D0C2894A3A900FAD8AC /* ThemesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F9D0B2894A3A900FAD8AC /* ThemesView.swift */; };
+		9C4F9D0E2894A4DF00FAD8AC /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F9D0D2894A4DF00FAD8AC /* ThemesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		9C4F9CD728949E0A00FAD8AC /* AppThemeSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppThemeSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C4F9CDA28949E0A00FAD8AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C4F9CDC28949E0A00FAD8AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9C4F9CDE28949E0A00FAD8AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9C4F9CE128949E0A00FAD8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C4F9CE328949E0C00FAD8AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C4F9CE628949E0C00FAD8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C4F9CE828949E0C00FAD8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		9C4F9CF728949E0C00FAD8AC /* AppThemeSwitcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppThemeSwitcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C4F9CFB28949E0C00FAD8AC /* AppThemeSwitcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemeSwitcherUITests.swift; sourceTree = "<group>"; };
 		9C4F9CFD28949E0C00FAD8AC /* AppThemeSwitcherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemeSwitcherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9C4F9D0B2894A3A900FAD8AC /* ThemesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesView.swift; sourceTree = "<group>"; };
+		9C4F9D0D2894A4DF00FAD8AC /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,9 @@
 		9C4F9CD928949E0A00FAD8AC /* AppThemeSwitcher */ = {
 			isa = PBXGroup;
 			children = (
+				9C4F9D0A2894A39A00FAD8AC /* Themes */,
 				9C4F9CDA28949E0A00FAD8AC /* AppDelegate.swift */,
 				9C4F9CDC28949E0A00FAD8AC /* SceneDelegate.swift */,
-				9C4F9CDE28949E0A00FAD8AC /* ViewController.swift */,
-				9C4F9CE028949E0A00FAD8AC /* Main.storyboard */,
 				9C4F9CE328949E0C00FAD8AC /* Assets.xcassets */,
 				9C4F9CE528949E0C00FAD8AC /* LaunchScreen.storyboard */,
 				9C4F9CE828949E0C00FAD8AC /* Info.plist */,
@@ -125,6 +124,15 @@
 				9C4F9CFD28949E0C00FAD8AC /* AppThemeSwitcherUITestsLaunchTests.swift */,
 			);
 			path = AppThemeSwitcherUITests;
+			sourceTree = "<group>";
+		};
+		9C4F9D0A2894A39A00FAD8AC /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				9C4F9D0B2894A3A900FAD8AC /* ThemesView.swift */,
+				9C4F9D0D2894A4DF00FAD8AC /* ThemesViewController.swift */,
+			);
+			path = Themes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +241,6 @@
 			files = (
 				9C4F9CE728949E0C00FAD8AC /* LaunchScreen.storyboard in Resources */,
 				9C4F9CE428949E0C00FAD8AC /* Assets.xcassets in Resources */,
-				9C4F9CE228949E0A00FAD8AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C4F9CDF28949E0A00FAD8AC /* ViewController.swift in Sources */,
 				9C4F9CDB28949E0A00FAD8AC /* AppDelegate.swift in Sources */,
+				9C4F9D0C2894A3A900FAD8AC /* ThemesView.swift in Sources */,
+				9C4F9D0E2894A4DF00FAD8AC /* ThemesViewController.swift in Sources */,
 				9C4F9CDD28949E0A00FAD8AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +305,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9C4F9CE028949E0A00FAD8AC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C4F9CE128949E0A00FAD8AC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9C4F9CE528949E0C00FAD8AC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +441,6 @@
 				INFOPLIST_FILE = AppThemeSwitcher/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +467,6 @@
 				INFOPLIST_FILE = AppThemeSwitcher/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
